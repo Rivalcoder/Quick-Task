@@ -110,4 +110,26 @@ function displayTasks() {
     });
 }
 
+
+function reset() {
+    if (confirm("Are you sure you want to reset all tasks?")) {
+        console.log("Enter the reset phase");
+        
+        let tasks = [];
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+        
+        const taskList = document.getElementById('taskList');
+        taskList.innerHTML = '';
+    } else {
+        console.log("Reset cancelled");
+    }
+}
+
+
+function showResetButton() {
+    const resetButton = document.getElementById('resetButton');
+    resetButton.classList.add('visible');
+}
+
+showResetButton();
 window.onload = displayTasks;
