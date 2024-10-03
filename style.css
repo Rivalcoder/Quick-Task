@@ -36,7 +36,10 @@ li {
     background-color: rgba(127, 114, 114, 0.1);
     border-radius: 5px;
     font-size: large;
+
+    
 }
+
 
 button {
     background: none;
@@ -140,6 +143,20 @@ li {
     h2 {
         font-size: 2rem;
     }
+
+    
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(127, 114, 114, 0.1);
+    border-radius: 5px;
+    font-size: large;
+    overflow-y: auto;
+ 
+    
+}
     .inp {
         width: 250px;
     }
