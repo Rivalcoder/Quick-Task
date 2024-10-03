@@ -1,0 +1,131 @@
+body {
+    min-height: 100vh;
+    padding: 10px;
+    background: #242529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    margin: 15px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+    font-family: "Kanit", sans-serif;
+    font-weight: 650;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(127, 114, 114, 0.1);
+    border-radius: 5px;
+    font-size: large;
+}
+
+button {
+    background: none;
+    border: none;
+    color: rgb(63, 33, 33);
+    cursor: pointer;
+    margin-left:auto;
+}
+
+
+button .fa-trash {
+    font-size: 20px;
+    color: #3e8e41; /* Adjust the size as needed */
+}
+
+button .fa-trash:hover{
+    transform: scale(1.2);
+}
+.inp {
+    border-radius: 20px;
+    width: 450px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 5px;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.add {
+    background-color: rgb(231, 240, 240);
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(32, 198, 167);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.add:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.box1 {
+    display: flex;
+    gap: None;
+}
+
+#taskList:empty {
+    display: none;
+}
+
+#taskList {
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #55221d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(127, 114, 114, 0.1);
+    border-radius: 5px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px; 
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .inp {
+        width: 250px;
+    }
+}
